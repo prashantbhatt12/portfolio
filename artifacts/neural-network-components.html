@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inside a Neural Network | Prashant</title>
+<meta name="description" content="A visual presentation explaining layers, neurons, weights, activation functions, loss functions and optimization algorithms, with TensorFlow Playground experiments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .slides{display:grid;gap:18px;margin:36px 0 12px}
+  .slides figure{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+  .slides img{width:100%;display:block}
+  .slides figcaption{font-size:14px;color:var(--muted);padding:10px 14px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="../index.html">Prashant</a>
+  <ul><li><a href="../index.html#about">About</a></li><li><a href="../index.html#value">Value</a></li><li><a href="../index.html#artifacts">Artifacts</a></li></ul>
+</div></nav>
+
+<div class="wrap">
+  <p class="crumb"><a href="../index.html#artifacts">← All artifacts</a></p>
+
+  <div class="art-head">
+    <div class="kicker">Artifact · AIML-501 Model Development</div>
+    <h1>Inside a Neural Network</h1>
+    <p style="font-size:19px;color:var(--muted);max-width:760px">A 10-slide visual presentation that explains the six core components of a neural network and shows what happens when you train one, using my own experiments in the TensorFlow Playground.</p>
+    <div class="facts"><span><b>Type:</b> Visual presentation</span><span><b>Course:</b> AIML-501 Model Development</span><span><b>Term:</b> Fall 2026</span></div>
+  </div>
+
+  <div class="actions" style="margin-top:28px">
+    <a class="btn primary" href="../assets/neural-network-components.pdf" download>Download slides (PDF)</a>
+    <a class="btn" href="../assets/neural-network-components.pdf" target="_blank" rel="noopener">Open in a new tab</a>
+  </div>
+
+  <div class="slides">
+    <figure><img src="../assets/nn-slides/slide-01.jpg" alt="Title slide: Inside a Neural Network" loading="lazy"><figcaption>1 · Title</figcaption></figure>
+    <figure><img src="../assets/nn-slides/slide-02.jpg" alt="Diagram of data flowing from input layer through hidden layers to output and loss" loading="lazy"><figcaption>2 · How data flows through a neural network</figcaption></figure>
+    <figure><img src="../assets/nn-slides/slide-03.jpg" alt="Layers and neurons explained with a single-neuron diagram" loading="lazy"><figcaption>3 · Layers and neurons</figcaption></figure>
+    <figure><img src="../assets/nn-slides/slide-04.jpg" alt="Weights and biases with a Playground screenshot of a 3-layer network" loading="lazy"><figcaption>4 · Weights and biases</figcaption></figure>
+    <figure><img src="../assets/nn-slides/slide-05.jpg" alt="ReLU, sigmoid and tanh activation functions" loading="lazy"><figcaption>5 · Activation functions</figcaption></figure>
+    <figure><img src="../assets/nn-slides/slide-06.jpg" alt="Loss functions and a training loss curve" loading="lazy"><figcaption>6 · Loss functions</figcaption></figure>
+    <figure><img src="../assets/nn-slides/slide-07.jpg" alt="Optimization algorithms and the training loop" loading="lazy"><figcaption>7 · Optimization algorithms</figcaption></figure>
+    <figure><img src="../assets/nn-slides/slide-08.jpg" alt="Playground experiment comparing zero and one hidden layers on circle data" loading="lazy"><figcaption>8 · Experiment 1: why hidden layers matter</figcaption></figure>
+    <figure><img src="../assets/nn-slides/slide-09.jpg" alt="Playground experiment with spiral data and a small network" loading="lazy"><figcaption>9 · Experiment 2: harder data needs more capacity</figcaption></figure>
+    <figure><img src="../assets/nn-slides/slide-10.jpg" alt="Summary slide on why visualizing neural networks matters" loading="lazy"><figcaption>10 · Summary</figcaption></figure>
+  </div>
+
+  <div class="field"><h2>Introduction</h2><div>
+    <p>Neural networks power almost everything in modern AI, from image recognition to large language models, but to most people they feel like a black box. This presentation breaks a neural network down into the six parts that every network shares and shows them working in real experiments.</p>
+  </div></div>
+
+  <div class="field"><h2>Description</h2><div>
+    <p>The deck has 10 slides:</p>
+    <ul>
+      <li>An architecture diagram showing how data flows from the input layer through hidden layers to the output, and how the loss flows back to update the weights.</li>
+      <li>One slide each for layers and neurons, weights and biases, activation functions, loss functions, and optimization algorithms, each with a simple visual.</li>
+      <li>Two slides of experiments from the TensorFlow Playground, comparing different network sizes on circle and spiral datasets.</li>
+      <li>A summary slide on why visualizing neural networks matters and the key insights from the exercise.</li>
+    </ul>
+  </div></div>
+
+  <div class="field"><h2>Objective</h2><div>
+    <p>To clearly define the key components of a neural network, show how they fit together visually, and build hands-on intuition by training my own models instead of only reading about them.</p>
+  </div></div>
+
+  <div class="field"><h2>Process</h2><div>
+    <ul>
+      <li>Reviewed the workshop resources on neural network components.</li>
+      <li>Trained models in the TensorFlow Playground, changing the dataset, number of hidden layers, neurons, input features and activation function, and recorded the test and training loss for each run.</li>
+      <li>Picked the experiments that showed the clearest contrast: 0 vs. 1 hidden layer on circle data, and a small network failing on spiral data.</li>
+      <li>Designed diagrams for the overall architecture, a single neuron, the activation curves and the training loop, keeping the text on each slide short.</li>
+      <li>Built the slides as a web page and exported them to PDF and images for this portfolio.</li>
+    </ul>
+  </div></div>
+
+  <div class="field"><h2>Tools and Technologies Used</h2><div>
+    <p>TensorFlow Playground for the experiments, HTML, CSS and SVG for the slides and diagrams, Playwright to export the PDF and images, and an AI assistant to help with drafting and layout.</p>
+  </div></div>
+
+  <div class="field"><h2>Value Proposition</h2><div>
+    <p>This artifact shows that I can explain a complex AI concept simply and visually, and back it up with hands-on experiments. It can be used as a quick primer for students, analysts or business stakeholders who need to understand what a neural network is doing before making decisions about using one.</p>
+  </div></div>
+
+  <div class="field"><h2>Unique Value</h2><div>
+    <p>My first artifact compared many algorithms at a high level. This one goes deep on a single model type and adds my own experimental evidence. Coming from security engineering, I focused on what you can actually observe and verify, like loss curves and weight sizes, so the presentation emphasizes how to tell whether a model is learning, not just how it is built.</p>
+  </div></div>
+
+  <div class="field"><h2>Relevance</h2><div>
+    <p>Neural networks are the foundation of deep learning and generative AI. Understanding layers, weights, activations, loss and optimization is necessary for building, tuning or even responsibly using these models. The lessons from the experiments, like matching model size to the problem and watching training vs. test loss, apply directly to real projects.</p>
+  </div></div>
+
+  <div class="field refs"><h2>References</h2><div>
+    <p>Smilkov, D., &amp; Carter, S. (n.d.). <i>A neural network playground</i>. TensorFlow. https://playground.tensorflow.org/</p>
+  </div></div>
+</div>
+
+<footer><div class="wrap">Indiana Wesleyan University</div></footer>
+</body>
+</html>
