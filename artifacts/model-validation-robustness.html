@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Model Validation and Robustness | Prashant</title>
+<meta name="description" content="A research report on how GPT is validated, its guardrails, how they can be bypassed, and examples of bias and edge cases.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="../index.html">Prashant</a>
+  <ul><li><a href="../index.html#about">About</a></li><li><a href="../index.html#value">Value</a></li><li><a href="../index.html#artifacts">Artifacts</a></li></ul>
+</div></nav>
+<div class="wrap">
+  <p class="crumb"><a href="../index.html#artifacts">&larr; All artifacts</a></p>
+  <div class="art-head">
+    <div class="kicker">Artifact &middot; AIML-501 Model Development</div>
+    <h1>Model Validation and Robustness in GPT</h1>
+    <p style="font-size:19px;color:var(--muted);max-width:760px">A research report on how generative AI models are tested for reliability, what guardrails protect them, how those guardrails get bypassed, and what biases and edge cases have been found.</p>
+    <div class="facts"><span><b>Type:</b> Research report</span><span><b>Course:</b> AIML-501 Model Development</span><span><b>Term:</b> Fall 2026</span></div>
+  </div>
+  <div class="actions" style="margin-top:28px">
+    <a class="btn primary" href="../assets/model-validation-report.pdf" download>Download report (PDF)</a>
+    <a class="btn" href="../assets/model-validation-report.pdf" target="_blank" rel="noopener">Open in a new tab</a>
+  </div>
+  <div class="figure"><img src="../assets/validation-preview.jpg" alt="First page of the Model Validation and Robustness report"></div>
+  <div class="field"><h2>Introduction</h2><div>
+    <p>A model that works in a demo can still fail when the data changes, when users get creative, or when someone tries to break it. Validation checks that a model performs reliably on new data, and robustness checks that it keeps behaving well under bias, unusual inputs and attacks. This matters even more for GPT, which can write almost anything and is used by millions of people.</p>
+  </div></div>
+  <div class="field"><h2>Description</h2><div>
+    <p>The 4-page report covers four areas:</p><ul><li><b>Validation:</b> train/validation/test splits, cross-validation, held-out benchmarks, test contamination and red teaming.</li><li><b>Guardrails:</b> alignment training with human feedback (RLHF), safety reward signals, content filters and usage policies.</li><li><b>Circumvention techniques:</b> role-play prompts, prompt injection, failures of safety training, translation into low-resource languages (bypass rate from under 1% to about 79% in one study) and automated adversarial suffixes.</li><li><b>Bias and edge cases:</b> the anti-Muslim bias found in GPT-3 (66% of completions of one prompt mentioned violence), gender and occupation bias, hallucinated court citations, arithmetic mistakes and sensitivity to wording.</li></ul>
+  </div></div>
+  <div class="field"><h2>Objective</h2><div>
+    <p>To explain how validation and robustness testing work for generative AI, and to show with real research why guardrails need continuous testing and not a one-time check.</p>
+  </div></div>
+  <div class="field"><h2>Process</h2><div>
+    <ul><li>Reviewed the course resources on validation, cross-validation and AI guardrails.</li><li>Researched how GPT-3 and GPT-4 were evaluated, aligned and red teamed.</li><li>Collected published studies on jailbreaks, bias and failure cases, and recorded the key numbers.</li><li>Described attack techniques only at a high level, to explain the risk without giving instructions.</li><li>Wrote the report in APA 7 format and exported it to PDF.</li></ul>
+  </div></div>
+  <div class="field"><h2>Tools and Technologies Used</h2><div>
+    <p>Published research papers and model documentation from OpenAI, scikit-learn concepts for validation (train/test splits and cross-validation), and an AI assistant to help with research and drafting.</p>
+  </div></div>
+  <div class="field"><h2>Value Proposition</h2><div>
+    <p>This artifact shows I can evaluate the reliability and safety of an AI system and explain the risks clearly. It can help teams that need to decide how to test a model before relying on it.</p>
+  </div></div>
+  <div class="field"><h2>Unique Value</h2><div>
+    <p>My other artifacts focus on algorithms, neural networks and training costs. This one focuses on testing and risk. My background in authentication and access control helps me think like a defender: assume the control will be probed, and test the places where it is weakest, such as other languages.</p>
+  </div></div>
+  <div class="field"><h2>Relevance</h2><div>
+    <p>Organizations are adopting generative AI quickly, and many failures come from missing testing, not from the model design. Validation, bias testing and guardrail review are core skills for anyone building, buying or governing AI.</p>
+  </div></div>
+  <div class="field refs"><h2>References</h2><div>
+    <p>Abid, A., Farooqi, M., &amp; Zou, J. (2021). Persistent anti-Muslim bias in large language models. <i>Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society</i>, 298&ndash;306. https://doi.org/10.1145/3461702.3462624</p>
+    <p>Brown, T. B., et al. (2020). Language models are few-shot learners. <i>Advances in Neural Information Processing Systems, 33</i>, 1877&ndash;1901.</p>
+    <p>Ji, Z., et al. (2023). Survey of hallucination in natural language generation. <i>ACM Computing Surveys, 55</i>(12). https://doi.org/10.1145/3571730</p>
+    <p>OpenAI. (2023). <i>GPT-4 system card</i>. https://cdn.openai.com/papers/gpt-4-system-card.pdf</p>
+    <p>Ouyang, L., et al. (2022). Training language models to follow instructions with human feedback. <i>arXiv</i>. https://arxiv.org/abs/2203.02155</p>
+    <p>Wei, A., Haghtalab, N., &amp; Steinhardt, J. (2023). Jailbroken: How does LLM safety training fail? <i>Advances in Neural Information Processing Systems, 36</i>.</p>
+    <p>Yong, Z.-X., Menghini, C., &amp; Bach, S. H. (2023). <i>Low-resource languages jailbreak GPT-4</i>. arXiv. https://arxiv.org/abs/2310.02446</p>
+    <p>Zou, A., et al. (2023). <i>Universal and transferable adversarial attacks on aligned language models</i>. arXiv. https://arxiv.org/abs/2307.15043</p>
+  </div></div>
+</div>
+<footer><div class="wrap">Indiana Wesleyan University</div></footer>
+</body>
+</html>
